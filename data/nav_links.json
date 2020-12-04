@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Home",
+        "href": "/"
+    },
+    {
+        "name": "Games",
+        "href": "/games"
+    },
+    {
+        "name": "About",
+        "href": "/about"
+    }
+]
