@@ -1,15 +1,15 @@
 {
     "title": "Cannon Games",
-    "description": "Taco Nacion Taco Restuarant in Ontario is now serving your favorite Mexican dishes and beer. Now offering outdoor patio dining and the next sporting event.",
+    "description": "Cannon Games has now released Rapid Fire. A 2D side shooter with tons of explosive fun.",
     "openGraph": {
       "type": "website",
       "locale": "en_US",
-      "url": "https://taco-nacion.com/",
-      "site_name": "Taco Nacion Ontario Mexican Resturant and Bar",
+      "url": "https://cannongames.vercel.app/",
+      "site_name": "Cannon Games Studios",
       "images": [
         {
-          "url": "url(/taco_nacion_logo.webp)",
-          "alt": "Taco Nacion Restuarant Logo"
+          "url": "url(/cannon_logo.webp)",
+          "alt": "Cannon Games Logo"
         }
       ]
     }

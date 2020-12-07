@@ -1,13 +1,10 @@
-import HOC from '../components/hoc';
-import Banner from '../components/banner';
-
+import HOC from '../../components/hoc';
 
 
 const WrappedComponents = () => {
   return (
     <div>
       <html lang="en-US" />
-      <Banner />
       
     </div>
   )

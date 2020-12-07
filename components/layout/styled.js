@@ -70,8 +70,8 @@ export const Grid = styled.div`
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     margin: 0px auto;
-    padding: 0px 5px;
-    grid-column-gap: 7px;
+    grid-row-gap: 15px;
+    grid-column-gap: 45px;
 `
 export const Content = styled(FlexColumn)`
     height: 100%;

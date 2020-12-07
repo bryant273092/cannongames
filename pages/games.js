@@ -1,15 +1,10 @@
 import HOC from '../components/hoc';
-import Banner from '../components/banner';
-
+import GamesGrid from '../components/gamesGrid';
 
 
 const WrappedComponents = () => {
   return (
-    <div>
-      <html lang="en-US" />
-      <Banner />
-      
-    </div>
+      <GamesGrid />
   )
 }
 export default function Home() {

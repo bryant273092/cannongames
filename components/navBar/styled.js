@@ -6,15 +6,16 @@ export const NavBarContainer = styled(FlexRow)`
     width: 100%;
     height: 60px;
     padding: 0px 25px;
-    align-items: center;
-    background-color: black;
+    align-items: left;
+    background-image: url('/nav_img.webp');
+    background-size: contain;
     position: sticky;
     top: 0;
     justify-content: space-between;
 `;
 export const NavBarLogo = styled(FlexRow)`
-    overflow: hidden;
-    margin-left: 20px;
+    height: 50px;
+    margin: 5px 0;
 `;
 export const NavBarItems = styled(FlexRow)`
     width: 65%;
@@ -65,6 +66,7 @@ export const DropDownItem = styled(NavBarButton)`
     margin: auto 0px;
     text-align: left;
     padding-left: 10%;
+    position: relative;
 `;
 export const MobileListContainer = styled(FlexColumn)`
     background-color: black;
@@ -82,11 +84,11 @@ export const MobileListContainer = styled(FlexColumn)`
 export const PlayButton = styled(NavBarButton)`
     width: 90px;
     height: 100%;
-    background-color: #00a1ff;
+    background-color: rgb(0, 0, 255, .75);
     padding: auto 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: .5px .5px 8px #fffafa;
+    text-shadow: .8px .5px 10px #fffafa;
     margin: 0px;
 `

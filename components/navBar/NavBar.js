@@ -18,6 +18,7 @@ export const NavBar = () => {
     const teamLogo = "";
     //alternates display property for mobile drop down menu
     const changeDisplay = () => {
+        console.log('clickkk')
         if (display == 'none') {
             setDisplay('flex');
         } else {
@@ -38,7 +39,7 @@ export const NavBar = () => {
                 ))}
             </MobileListContainer>
             <NavBarLogo>
-                <Image width='100px' height='55px' alt="An image of the Taco Nacion Logo" src={"/cannon_logo.png"} />
+                <Image width='100px' height='50px' alt="An image of Cannon Games Logo" src={"/cannon_logo.webp"} />
             </NavBarLogo>
             <NavBarItems>
                 {links.map((link) => (

@@ -1,21 +1,28 @@
-import {BannerContainer, BannerHeader, BannerText, BannerButtonGrid, BannerButton, ImageFilter, ImageContainer, Image} from './styled';
+import { BannerContainer, BannerText, BannerButtonGrid, BannerButton, ImageContainer, Image, Video, Source, OverlayContent } from './styled';
 
 export const Banner = () => {
-    return(
+    return (
         <BannerContainer>
-            <video autoPlay>
-                <source type={"video/webm"}src={"https://uploads-ssl.webflow.com/5f7fa16d7e69dda1a196d991/5f84f6ffc0babdb176d65448_new-transcode.webm"}/>
-            </video>
-            <ImageFilter>
+            <Video autoPlay>
+                <Source type={"video/webm"} src={"https://uploads-ssl.webflow.com/5f7fa16d7e69dda1a196d991/5f84f6ffc0babdb176d65448_new-transcode.webm"} />
+                <Source type={"image/webp"} src={"url(/background.webp)"} />
+            </Video>
+            <OverlayContent>
                 <ImageContainer>
-                    <Image alt="Taco Nacion Logo" src={'cannon_logo.png'}/>
+                    <Image style={{
+                        
+                    }}alt="cannon_logo" src={'rapid_fire_logo_white.webp'} />   
                 </ImageContainer>
-                
-                <BannerText>Authentic Mexican Food</BannerText>
+                <BannerText>Available Now</BannerText>
                 <BannerButtonGrid>
-                    <BannerButton title="View Menu for Taco Nacion"href='/menu'>View Menu</BannerButton>
+                    <BannerButton title="Play Cannon Games' Rapid Fire Game" href='/games/rapidfire'>Play</BannerButton>
                 </BannerButtonGrid>
-            </ImageFilter>
+
+                
+            </OverlayContent>
+
+
+
         </BannerContainer>
     )
 }
