@@ -3,27 +3,23 @@ import { FlexColumn, FlexRow, Grid } from '../layout';
 
 
 export const GridContainer = styled(FlexColumn)`
-    width: 90%;
-    margin: 50px auto;
-`
-export const GameGrid = styled(Grid)`
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-template-rows: auto;
+    width: 100%;
+    margin-top: 50px;
     
+`
+export const GameGrid = styled(FlexRow)`
+    @media (max-width: 1025px) {
+        flex-direction: column;
+    }
 `
 export const GameContainer = styled(FlexColumn)`
-    width: 350px;
-    margin: 0px auto;
+    width: 450px;
+    margin: 20px auto;
     align-items: center;
     @media (max-width: 500px){
-        height: 250px;
-        width: 300px;
+        width: 90%;
         
     }
-    
-    // background-image: ${(props) => props.image || "url(/background.webp)"};
-    // background-size: cover;
-    // background-repeat: no-repeat;
 `
 export const Heading = styled.h1`
     text-align: center;
@@ -31,20 +27,21 @@ export const Heading = styled.h1`
     padding: 30px 0;
 `
 export const Image = styled.img`
-    height: 300px;
+    height: 100%;
     width: 450px;
     margin-top: 20px;
     border-radius: 10px;
     @media (max-width: 500px){
-        width: 250px;
-        height: 150px
+        width: 100%;
+        height: 100%;
     }
 `
 export const LogoImage = styled.img`
     width: 300px;
-    height: 80px;
+    height: 100%;
     
     @media (max-width: 500px){
-        width: 150px;
+        width: 60%;
+        height: 100%;
     }
 `
