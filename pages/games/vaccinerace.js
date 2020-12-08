@@ -4,7 +4,7 @@ import HOC from '../../components/hoc';
 const WrappedComponents = () => {
   return (
     <div>
-      <html lang="en-US" />
+      
       
     </div>
   )

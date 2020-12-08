@@ -36,7 +36,7 @@ export const Button = styled.a`
     text-align: center;
     border-radius: 10px;
     font-size: 25px;
-    background-color: rgba(238, 151, 28, 0.7);
+    background-color: rgb(0, 0, 255, .55);
     padding: ${(props) => props.padding|| "10px 0px"};
     @media (max-width: 850px) {
         font-size: 1em;

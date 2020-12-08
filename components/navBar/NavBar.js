@@ -18,7 +18,6 @@ export const NavBar = () => {
     const teamLogo = "";
     //alternates display property for mobile drop down menu
     const changeDisplay = () => {
-        console.log('clickkk')
         if (display == 'none') {
             setDisplay('flex');
         } else {
@@ -50,7 +49,7 @@ export const NavBar = () => {
                     </NavBarItem>
                 ))}
             </NavBarItems>
-            <PlayButton>
+            <PlayButton href={'/games/rapidfire'}>
                 Play Now
             </PlayButton>
         </NavBarContainer>

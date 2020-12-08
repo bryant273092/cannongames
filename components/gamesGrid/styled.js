@@ -14,7 +14,7 @@ export const GameGrid = styled(FlexRow)`
 `
 export const GameContainer = styled(FlexColumn)`
     width: 450px;
-    margin: 20px auto;
+    margin: 40px auto;
     align-items: center;
     @media (max-width: 500px){
         width: 90%;
@@ -27,7 +27,6 @@ export const Heading = styled.h1`
     padding: 30px 0;
 `
 export const Image = styled.img`
-    height: 100%;
     width: 450px;
     margin-top: 20px;
     border-radius: 10px;
@@ -38,7 +37,6 @@ export const Image = styled.img`
 `
 export const LogoImage = styled.img`
     width: 300px;
-    height: 100%;
     
     @media (max-width: 500px){
         width: 60%;

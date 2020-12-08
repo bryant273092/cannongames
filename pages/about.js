@@ -1,10 +1,10 @@
 import HOC from '../components/hoc';
-
+import UserCredits from '../components/userCredits'
 
 const WrappedComponents = () => {
   return (
     <div>
-      <html lang="en-US" />
+      <UserCredits />
       
     </div>
   )
