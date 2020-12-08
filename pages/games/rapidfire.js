@@ -1,10 +1,15 @@
 import HOC from '../../components/hoc';
-
+import GameBanner from '../../components/gameBanner';
+import RapidFire  from '../../components/rapidFire'
 
 const WrappedComponents = () => {
   return (
-    <div>
-    </div>
+    <>
+      <GameBanner />
+      <RapidFire />
+
+    </>
+
   )
 }
 export default function Home() {

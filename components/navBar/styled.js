@@ -12,6 +12,7 @@ export const NavBarContainer = styled(FlexRow)`
     position: sticky;
     top: 0;
     justify-content: space-between;
+    z-index: 100;
 `;
 export const NavBarLogo = styled(FlexRow)`
     height: 50px;

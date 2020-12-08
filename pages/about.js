@@ -5,7 +5,6 @@ const WrappedComponents = () => {
   return (
     <div>
       <UserCredits />
-      
     </div>
   )
 }

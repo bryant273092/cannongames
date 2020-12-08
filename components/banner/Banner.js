@@ -3,7 +3,7 @@ import { BannerContainer, BannerText, BannerButtonGrid, BannerButton, ImageConta
 export const Banner = () => {
     return (
         <BannerContainer>
-            <Video autoPlay>
+            <Video autoPlay loop>
                 <Source type={"video/webm"} src={"https://uploads-ssl.webflow.com/5f7fa16d7e69dda1a196d991/5f84f6ffc0babdb176d65448_new-transcode.webm"} />
                 <Source type={"image/webp"} src={"url(/background.webp)"} />
             </Video>
@@ -11,18 +11,13 @@ export const Banner = () => {
                 <ImageContainer>
                     <Image style={{
                         
-                    }}alt="cannon_logo" src={'rapid_fire_logo_white.webp'} />   
+                    }}alt="cannon_logo" src={'rapid.webp'} />   
                 </ImageContainer>
                 <BannerText>Available Now</BannerText>
                 <BannerButtonGrid>
                     <BannerButton title="Play Cannon Games' Rapid Fire Game" href='/games/rapidfire'>Play</BannerButton>
-                </BannerButtonGrid>
-
-                
+                </BannerButtonGrid>           
             </OverlayContent>
-
-
-
         </BannerContainer>
     )
 }

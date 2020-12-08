@@ -30,13 +30,14 @@ export const HeaderThree = styled.h3`
     text-align: center;
 `
 export const Button = styled.a`
-    width: 50%;
+    width: 45%;
     margin: 15px auto; 
     color: white;
     text-align: center;
+    border: solid 6px rgb(0, 0, 255);
     border-radius: 10px;
     font-size: 25px;
-    background-color: rgb(0, 0, 255, .55);
+    background-color: ${ (props) => props.background|| "rgb(0, 0, 255)"};
     padding: ${(props) => props.padding|| "10px 0px"};
     @media (max-width: 850px) {
         font-size: 1em;

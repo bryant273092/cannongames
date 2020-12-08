@@ -68,8 +68,8 @@ export const BannerText = styled.h2`
 `
 export const Video = styled.video`
     right: 0;     
-    min-width: 100%; 
-    min-height: 100%;
+    min-width: ${ (props) => props.width || "100%"}; 
+    min-height: ${ (props) => props.height || "100%"};
     width: auto; 
     height: auto; 
     background-size: cover;
@@ -86,7 +86,7 @@ export const OverlayContent = styled(FlexColumn)`
     height: 100%;
     width: 100%;
     @media (max-width: 640px) {
-        top: 400px;
+        top: 200px;
     } ; 
 
 `
