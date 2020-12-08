@@ -2,21 +2,25 @@ import { FlexColumn, FlexRow } from '../layout';
 import styled from 'styled-components';
 
 export const RapidFireContainer = styled(FlexColumn)`
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
     border-radius: 10px;
-    background-color: rgba(0,0,0,.5);
+    
     
 `
 export const MediaContainer = styled(FlexRow)`
     align-items: center;
-    height: 75vh;
-    @media (max-width: 700px){
+    min-height: 90vh;
+    padding: 50px 0px;
+    @media (max-width: 1024px){
         flex-direction: column;
+        height: auto;
     }
+    background-color: ${(props) => props.color || 'rgba(0,0,0,.5)' };
+    
 `
 export const Video = styled.video`
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 0px auto;
     margin-bottom: 50px;
@@ -25,16 +29,31 @@ export const Element = styled.div`
     display: flex;
     width: 50%;
     flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+    background-image: ${(props) => props.image || 'none'};
 `
 export const Description = styled.p`
-    color: white;
+    color: black;
     width: 70%;
     margin: 0px auto;
-    font-family: 
+    font-size: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    @media (max-width: 1024px) {
+        width: 80%;
+        margin: 25px auto;
+    }
 `
 export const Image = styled.img`
     width: 60%;
     border-radius: 10px;
     margin-right: 25px;
     height: 80%;
+    @media (max-width: 1024px) {
+        width: 90%;
+        margin: 25px auto;
+    }
 `

@@ -4,6 +4,7 @@ const Users = require('../../data/contributors.json')
 export const UserCredits = () => {
     return (
         <SectContainer>
+            <CompanyLogo src={'/cannon_logo.webp'} />
 
             {Users.map((user) => (
                 <User key={user.name}>
@@ -11,10 +12,6 @@ export const UserCredits = () => {
                     <UserName key={user.name}>{"  " + user.name}</UserName>
                 </User>
             ))}
-
-
-
-            <CompanyLogo src={'/cannon_logo.webp'} />
         </SectContainer>
     )
 }

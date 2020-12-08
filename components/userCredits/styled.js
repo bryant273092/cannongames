@@ -7,9 +7,9 @@ export const SectContainer = styled(FlexColumn)`
 `
 export const User = styled(FlexRow)`
     width: 50%;
-    background-color: black;
+    background-color: rgb(0,0,0,.65);
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px;
     @media (max-width: 925px) {
         width: 65%
     }
@@ -21,8 +21,8 @@ export const User = styled(FlexRow)`
     }
 `
 export const CompanyLogo = styled.img`
-    width: 30%;
-    margin: 50px 0px;
+    width: 20%;
+    margin: 30px 0px;
 `
 export const UserRole = styled.h3`
     color: rgb(0, 0, 255);

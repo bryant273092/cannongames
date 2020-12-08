@@ -5,7 +5,7 @@ import RapidFire  from '../../components/rapidFire'
 const WrappedComponents = () => {
   return (
     <>
-      <GameBanner />
+      <GameBanner logo={'/rapid.webp'}/>
       <RapidFire />
 
     </>

@@ -20,21 +20,21 @@ export const HeaderOne = styled.h1`
     text-align: center;
 `
 export const HeaderTwo = styled.h2`
-    color: white;
+    color: ${(props) => props.color|| "white"};
     width: 100%;
     text-align: center;
 `
 export const HeaderThree = styled.h3`
-    color: #ee971c;
+    color: white;
     width: 100%;
     text-align: center;
 `
 export const Button = styled.a`
     width: 45%;
     margin: 15px auto; 
-    color: white;
+    color: ${(props) => props.color || "white"};
     text-align: center;
-    border: solid 6px rgb(0, 0, 255);
+    border: ${(props) => props.border || "solid 6px rgb(0, 0, 255)"} ;
     border-radius: 10px;
     font-size: 25px;
     background-color: ${ (props) => props.background|| "rgb(0, 0, 255)"};
@@ -50,18 +50,22 @@ export const Button = styled.a`
 `
 export const Image = styled.img`
     width: 50%;
-    height: 50%;
     margin: 0px auto;
+    border-radius: 10px;
+    @media (max-width: 850px) {
+        width: 80%;
+        
+    } ;
 `
 export const Text = styled.p`
     color: ${(props) => props.color|| "white"};
     text-align: center;
     font-size: ${(props) => props.size|| "15px"};
-    width: 80%;
-    margin: 0px auto;
+    width: 50%;
+    margin: 30px auto;
     text-decoration: ${(props) => props.decoration|| "underline"};
     @media (max-width: 850px) {
-        width: 50%;
+        width: 70%;
         
     } ;
     
@@ -69,10 +73,11 @@ export const Text = styled.p`
 export const Grid = styled.div`
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 0px auto;
     grid-row-gap: 15px;
     grid-column-gap: 45px;
+    align-items: center;
 `
 export const Content = styled(FlexColumn)`
     height: 100%;

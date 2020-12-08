@@ -9,6 +9,11 @@ export const HOC = (Content) => {
     const WrappedComponent = (props) => {
         return (
             <>
+                <Head>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap" rel="stylesheet" />
+                    <link rel="icon" type="image/png" href="/favicon.png"></link>
+                </Head>
                 <DefaultSeo {...config} />
                 <NavBar />
                 
