@@ -1,9 +1,9 @@
 import { RapidFireContainer, Video, Element, MediaContainer, Description, Image } from './styled';
-import { HeaderOne, HeaderTwo, Button, Grid, FlexRow, HeaderThree } from '../../components/layout';
+import { HeaderOne, HeaderTwo, Button, Grid, FlexRow, HeaderThree, FlexColumn } from '../../components/layout';
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+const weapons = require('../../data/weapons.json')
 
 export const RapidFire = () => {
     return (
@@ -11,8 +11,8 @@ export const RapidFire = () => {
             <MediaContainer>
                 <Element>
                     <HeaderOne>Gameplay</HeaderOne>
-                    <Video autoPlay controls loop>
-                        <source type={"video/webm"} src={"https://uploads-ssl.webflow.com/5f7fa16d7e69dda1a196d991/5f84f6ffc0babdb176d65448_new-transcode.webm"} />
+                    <Video playsinline autoPlay controls loop>
+                        <source type={"video/webm"} src={"/landing_trailer.webm"} />
                     </Video>
                 </Element>
                 <Element>
@@ -21,14 +21,14 @@ export const RapidFire = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://uploads-ssl.webflow.com/5f7fa16d7e69dda1a196d991/5faaf1082bc78508e5d95f16_main-qimg-c5a69e2769af2a0886ff2749c569bc95.jpeg"
+                                src="/lobby.png"
                                 alt="First slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://uploads-ssl.webflow.com/5f7fa16d7e69dda1a196d991/5faaf1082bc78508e5d95f16_main-qimg-c5a69e2769af2a0886ff2749c569bc95.jpeg"
+                                src="/homescreen.png"
                                 alt="Third slide"
                             />
                         </Carousel.Item>
@@ -45,10 +45,12 @@ export const RapidFire = () => {
             <MediaContainer color={'rgb(255,255,255, 0.5)'}>
                 <Element>
                     <HeaderTwo style={{ color: "rgb(0, 0, 255)" }}> Story</HeaderTwo>
-                    <Description>During World War III, humans developed many weapons
-                    of mass destruction. As a result 95% of the population is wiped out from earth. Gravitational weapons messed with the laws of physics resulting in some weird occurences.
-                    5 years after the war, a few survivors compete for resources to continue living. In a world without law enforcement,
-                    your only protection is your gun.
+                    <Description>It's always a misery for people who have survived a war. But it is even more disparate when the weapons of mass destruction wipe out 95% of the population on earth. 
+                        Now there is contaminated air, soil, and a messed up law of gravity. You are one the few people who survived the events of World War III. You survived the soldiers, the nuclear 
+                        weapons, and the gravitation bombs.The real challenge comes after the war; with the world now lacking social order and law enforcement. By gathering all resources in the city
+                         ruins, you have to fight for survival. The only thing can protect you is your weapon. Take your guns and be the last one standing!
+
+
                     </Description>
                 </Element>
                 <Image src={'/map_paris.png'} />
@@ -60,40 +62,51 @@ export const RapidFire = () => {
                     <HeaderTwo style={{ color: "rgb(0, 0, 255)" }}> Multiplayer</HeaderTwo>
                     <Description>
                         Grab a friend to play with! Rapid Fire offers the ability to play with a second player.
-                        Eliminate the other player and be the last one standing to win the round. Players who wins the most rounds win the match.
+                        Fight for resources and eliminate the other player and be the last one standing to win 
+                        the round. Players who win the most rounds win the match.
 
                     </Description>
                 </Element>
 
             </MediaContainer>
-            {/* <MediaContainer color={'rgb(255,255,255, 1)'}>
+            <MediaContainer color={'rgb(255,255,255, .7)'}>
 
                 <Element style={{ width: "100%" }}>
                     <HeaderTwo style={{ color: "rgb(0, 0, 255)" }}>Weapons</HeaderTwo>
                     <Grid>
-                        <Element>
-                            <Image style={{ width: "100%" }} src={'/machine_gun.png'} />
-                            <HeaderThree>Machine Gun</HeaderThree>
-                        </Element>
-                        <Element>
-                            <Image style={{ width: "100%" }} src={'/pistol.png'} />
-                            <HeaderThree>Pistol</HeaderThree>
-                        </Element>
-                        <Element>
-                            <Image style={{ width: "100%" }} src={'/rocket.png'} />
-                            <HeaderThree>Rocket Launcher</HeaderThree>
-                        </Element>
-                        <Element>
-                            <Image style={{ width: "100%" }} src={'/shotgun.png'} />
-                            <HeaderThree>Shotgun</HeaderThree>
-                        </Element>
+                        {weapons.map((weapon) => (
+                            <Element style={{ width: "80%"}}>
+                                <Image style={{ width: '100%', margin:"0px"}}src={weapon.href}/>
+                                <HeaderThree color={'white'}>{weapon.weapon}</HeaderThree>
+                                <ul>
+                                    {weapon.description.map((item) => (
+                                        <li><Description style={{margin: '10px auto'}}>{item}</Description></li>
+                                    ))}
+                                </ul>
+                            </Element>
+                        ))}
                     </Grid>
-
-
                 </Element>
-
-            </MediaContainer> */}
-
+            </MediaContainer>
+            <MediaContainer>
+                <FlexColumn>
+                    <HeaderTwo style={{ color: "rgb(255, 255, 255)" }}>Features</HeaderTwo>
+                    <FlexRow>
+                        <FlexColumn>
+                            <HeaderThree color={'rgb(0, 0, 255)'}>Fast Paced</HeaderThree>
+                            <Description color={'white'}>Rapid Fire is a perfect party game. Grab a friend and find out who can be the last one standing the post apocalypse world. </Description>
+                        </FlexColumn>
+                        <FlexColumn>
+                            <HeaderThree color={'rgb(0, 0, 255)'}>Destructible Terrain</HeaderThree>
+                            <Description color={'white'}>In the game, you can destroy almost everything. You can destroy objects that your opponent is trying to hide behind. You can create a pathway that didn’t exist before. You even can make your opponents fall to the death.</Description>
+                        </FlexColumn>
+                        <FlexColumn>
+                            <HeaderThree color={'rgb(0, 0, 255)'}>Unique Weapons</HeaderThree>
+                            <Description color={'white'}>During battle, different weapons will spawn in the battlefield. And they provide not only more damage but also unique playstyles.</Description>
+                        </FlexColumn>
+                    </FlexRow>
+                </FlexColumn>
+            </MediaContainer>
             <HeaderOne style={{ marginTop: "75px" }}>Get The Game</HeaderOne>
             <Button style={{marginBottom: "75px"}}> Download Now</Button>
 

@@ -9,7 +9,9 @@
       "images": [
         {
           "url": "url(/cannon_logo.webp)",
-          "alt": "Cannon Games Logo"
+          "alt": "Cannon Games Logo",
+          "height": "100px",
+          "width": "200px"
         }
       ]
     }

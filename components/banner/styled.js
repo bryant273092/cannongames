@@ -67,12 +67,11 @@ export const BannerText = styled.h2`
     } ; 
 `
 export const Video = styled.video`
-    right: 0;     
+    bottom: 0;     
     min-width: ${ (props) => props.width || "100%"}; 
     min-height: ${ (props) => props.height || "100%"};
     width: auto; 
     height: auto; 
-    background-size: cover;
     overflow: hidden;
     
     position: absolute;

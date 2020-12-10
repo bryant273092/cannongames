@@ -11,7 +11,7 @@ export const RapidFireContainer = styled(FlexColumn)`
 export const MediaContainer = styled(FlexRow)`
     align-items: center;
     min-height: 90vh;
-    padding: 50px 0px;
+    padding: 50px 10px;
     @media (max-width: 1024px){
         flex-direction: column;
         height: auto;
@@ -28,6 +28,7 @@ export const Video = styled.video`
 export const Element = styled.div`
     display: flex;
     width: 50%;
+    max-height: 100%;
     flex-direction: column;
     align-items: center;
     margin: 0px auto;
@@ -37,13 +38,13 @@ export const Element = styled.div`
     background-image: ${(props) => props.image || 'none'};
 `
 export const Description = styled.p`
-    color: black;
-    width: 70%;
+    color: ${(props) => props.color || 'black'};
+    width: 80%;
     margin: 0px auto;
     font-size: 20px;
     font-family: 'JetBrains Mono', monospace;
     @media (max-width: 1024px) {
-        width: 80%;
+        width: 90%;
         margin: 25px auto;
     }
 `

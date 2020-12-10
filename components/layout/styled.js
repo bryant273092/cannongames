@@ -25,9 +25,10 @@ export const HeaderTwo = styled.h2`
     text-align: center;
 `
 export const HeaderThree = styled.h3`
-    color: white;
+    color: ${ (props) => props.color || 'white'};
     width: 100%;
     text-align: center;
+    padding: 20px;
 `
 export const Button = styled.a`
     width: 45%;
@@ -73,11 +74,14 @@ export const Text = styled.p`
 export const Grid = styled.div`
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 0px auto;
     grid-row-gap: 15px;
     grid-column-gap: 45px;
     align-items: center;
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 `
 export const Content = styled(FlexColumn)`
     height: 100%;

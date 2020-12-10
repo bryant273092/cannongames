@@ -1,0 +1,38 @@
+[
+    {
+        "weapon": "Pistol",
+        "href": "/pistol.png",
+        "description": [
+            "Low fire rate", 
+            "Low damage",
+            "The very least weapon that you need to protect yourself from other malicious survivors."
+        ]
+    },
+    {
+        "weapon": "Machine Gun",
+        "href": "/machine_gun.png",
+        "description": [
+            "High fire rate", 
+            "Mid damage",
+            "Overwhelm your enemy by a full load of bullets."
+        ]
+    },
+    {
+        "weapon": "Shotgun",
+        "href": "/shotgun.png",
+        "description": [
+            "Low fire rate", 
+            "High damage",
+            "This shotgun spreads the pellets to a wide angle. Your enemy has nowhere to hide."
+        ]
+    },
+    {
+        "weapon": "Rocket Launcher",
+        "href": "/rocket.png",
+        "description": [
+            "Low fire rate", 
+            "High damage",
+            "It launches high damage rockets that destroy everything in its explosion."
+        ]
+    }
+]
