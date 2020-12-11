@@ -7,7 +7,7 @@ export const GameBanner = ({background, logo}) => {
         <GameBannerContainer background={background}>
             <GameLogo src={logo}/>
             <ButtonGrid>
-                <Button>Download</Button>
+                <Button href={'/RapidFireGame.zip'} download>Download</Button>
                 <Button href={'#Contain'}background={"rgb(0,0,0,0)"}> Learn More</Button>
             </ButtonGrid>
         </GameBannerContainer>

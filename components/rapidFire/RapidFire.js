@@ -109,7 +109,7 @@ export const RapidFire = () => {
             </MediaContainer>
             
             <HeaderOne style={{ marginTop: "75px" }}>Get The Game</HeaderOne>
-            <Button style={{marginBottom: "75px"}}> Download Now</Button>
+            <Button style={{marginBottom: "75px"}} href={'/RapidFireGame.zip'} download> Download Now</Button>
 
 
 
