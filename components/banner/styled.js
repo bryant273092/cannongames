@@ -5,8 +5,9 @@ export const BannerContainer = styled(FlexColumn)`
     width: 100%;
     z-index: -1;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
+    background-image: url(/map_paris.png)
     
 `
 

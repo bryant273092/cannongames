@@ -58,3 +58,8 @@ export const Image = styled.img`
         margin: 25px auto;
     }
 `
+export const RowCont = styled(FlexRow)`
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+`

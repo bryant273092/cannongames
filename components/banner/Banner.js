@@ -3,10 +3,6 @@ import { BannerContainer, BannerText, BannerButtonGrid, BannerButton, ImageConta
 export const Banner = () => {
     return (
         <BannerContainer>
-            <Video playsinline autoPlay loop>
-                <Source type={"video/webm"} src={"landing_trailer.webm"} />
-                <Source type={"image/webp"} src={"url(/background.webp)"} />
-            </Video>
             <OverlayContent>
                 <ImageContainer>
                     <Image style={{

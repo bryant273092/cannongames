@@ -1,4 +1,4 @@
-import { RapidFireContainer, Video, Element, MediaContainer, Description, Image } from './styled';
+import { RapidFireContainer, Video, Element, MediaContainer, Description, Image, RowCont } from './styled';
 import { HeaderOne, HeaderTwo, Button, Grid, FlexRow, HeaderThree, FlexColumn } from '../../components/layout';
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +12,7 @@ export const RapidFire = () => {
                 <Element>
                     <HeaderOne>Gameplay</HeaderOne>
                     <Video playsinline autoPlay controls loop>
-                        <source type={"video/webm"} src={"/landing_trailer.webm"} />
+                        <source type={"video/webm"} src={"/Rapidfire_final_trailer.webm"} />
                     </Video>
                 </Element>
                 <Element>
@@ -69,6 +69,25 @@ export const RapidFire = () => {
                 </Element>
 
             </MediaContainer>
+            <MediaContainer>
+                <FlexColumn>
+                    <HeaderTwo style={{ color: "rgb(255, 255, 255)" }}>Features</HeaderTwo>
+                    <RowCont>
+                        <FlexColumn>
+                            <HeaderThree color={'rgb(0, 0, 255)'}>Fast Paced</HeaderThree>
+                            <Description color={'white'}>Rapid Fire is a perfect party game. Grab a friend and find out who can be the last one standing the post apocalypse world. </Description>
+                        </FlexColumn>
+                        <FlexColumn>
+                            <HeaderThree color={'rgb(0, 0, 255)'}>Destructible Terrain</HeaderThree>
+                            <Description color={'white'}>In the game, you can destroy almost everything. You can destroy objects that your opponent is trying to hide behind. You can create a pathway that didn’t exist before. You even can make your opponents fall to the death.</Description>
+                        </FlexColumn>
+                        <FlexColumn>
+                            <HeaderThree color={'rgb(0, 0, 255)'}>Unique Weapons</HeaderThree>
+                            <Description color={'white'}>During battle, different weapons will spawn in the battlefield. And they provide not only more damage but also unique playstyles.</Description>
+                        </FlexColumn>
+                    </RowCont>
+                </FlexColumn>
+            </MediaContainer>
             <MediaContainer color={'rgb(255,255,255, .7)'}>
 
                 <Element style={{ width: "100%" }}>
@@ -88,25 +107,7 @@ export const RapidFire = () => {
                     </Grid>
                 </Element>
             </MediaContainer>
-            <MediaContainer>
-                <FlexColumn>
-                    <HeaderTwo style={{ color: "rgb(255, 255, 255)" }}>Features</HeaderTwo>
-                    <FlexRow>
-                        <FlexColumn>
-                            <HeaderThree color={'rgb(0, 0, 255)'}>Fast Paced</HeaderThree>
-                            <Description color={'white'}>Rapid Fire is a perfect party game. Grab a friend and find out who can be the last one standing the post apocalypse world. </Description>
-                        </FlexColumn>
-                        <FlexColumn>
-                            <HeaderThree color={'rgb(0, 0, 255)'}>Destructible Terrain</HeaderThree>
-                            <Description color={'white'}>In the game, you can destroy almost everything. You can destroy objects that your opponent is trying to hide behind. You can create a pathway that didn’t exist before. You even can make your opponents fall to the death.</Description>
-                        </FlexColumn>
-                        <FlexColumn>
-                            <HeaderThree color={'rgb(0, 0, 255)'}>Unique Weapons</HeaderThree>
-                            <Description color={'white'}>During battle, different weapons will spawn in the battlefield. And they provide not only more damage but also unique playstyles.</Description>
-                        </FlexColumn>
-                    </FlexRow>
-                </FlexColumn>
-            </MediaContainer>
+            
             <HeaderOne style={{ marginTop: "75px" }}>Get The Game</HeaderOne>
             <Button style={{marginBottom: "75px"}}> Download Now</Button>
 
